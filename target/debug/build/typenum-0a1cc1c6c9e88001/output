@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/ylemdao/workspace/atcoder/target/debug/build/typenum-0a1cc1c6c9e88001/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/ylemdao/workspace/atcoder/target/debug/build/typenum-0a1cc1c6c9e88001/out/op.rs
