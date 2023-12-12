@@ -1,5 +1,5 @@
 #![allow(non_snake_case)]
-use proconio::{fastout, input};
+use proconio::{input, fastout};
 
 #[fastout]
 fn main() {
