@@ -1,10 +1,7 @@
 #![allow(non_snake_case)]
 
 use itertools::iproduct;
-use proconio::{
-  fastout, input,
-  marker::{Chars, Usize1},
-};
+use proconio::{fastout, input, marker::Chars};
 
 fn f(i: usize, j: usize, n: usize, sum: &Vec<Vec<usize>>) -> usize {
   let (X, x, Y, y) = (i / n, i % n, j / n, j % n);

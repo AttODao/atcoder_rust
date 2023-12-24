@@ -3,7 +3,7 @@ use proconio::{fastout, input, marker::Chars};
 
 #[fastout]
 fn main() {
-  input! {n:usize,s:Chars}
+  input! {_:usize,s:Chars}
 
   let mut s = s.iter().map(|&c| c as usize - 'a' as usize).collect_vec();
   s.push(100);

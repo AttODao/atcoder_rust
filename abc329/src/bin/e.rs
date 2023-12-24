@@ -1,5 +1,3 @@
-use std::ops::Deref;
-
 use proconio::{fastout, input, marker::Chars};
 
 #[fastout]
