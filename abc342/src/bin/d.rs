@@ -1,6 +1,6 @@
 #![allow(non_snake_case)]
 use im_rc::HashMap;
-use itertools::Itertools;
+
 use proconio::{fastout, input};
 
 #[fastout]
