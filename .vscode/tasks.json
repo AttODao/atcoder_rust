@@ -1,0 +1,62 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "rust: cargo compete new",
+      "type": "shell",
+      "command": "cargo",
+      "args": [
+        "compete",
+        "new",
+        "${input:contest}"
+      ]
+    },
+    {
+      "label": "rust: cargo compete test",
+      "type": "shell",
+      "command": "cargo",
+      "args": [
+        "compete",
+        "test",
+        "${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+    },
+    {
+      "label": "rust: cargo compete submit",
+      "type": "shell",
+      "command": "cargo",
+      "args": [
+        "compete",
+        "submit",
+        "${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      }
+    },
+    {
+      "label": "rust: cargo compete submit (no test)",
+      "type": "shell",
+      "command": "cargo",
+      "args": [
+        "compete",
+        "submit",
+        "${fileBasenameNoExtension}",
+        "--no-test"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "contest",
+      "description": "contestID",
+      "type": "promptString",
+    },
+  ],
+}
