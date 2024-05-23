@@ -4,11 +4,10 @@
     {
       "label": "rust: cargo compete new",
       "type": "shell",
-      "command": "cargo",
+      "command": "sh",
       "args": [
-        "compete",
-        "new",
-        "${input:contest}"
+        "-c",
+        "cargo compete new ${input:contest}; cp -r .vscode ${input:contest}; code ${input:contest}",
       ]
     },
     {
