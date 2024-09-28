@@ -6,22 +6,28 @@ match: Lines
 cases:
   - name: sample1
     in: |
-      atcoder toe
+      6
+      BWBWBW
+      WWWBBB
     out: |
-      Yes
+      4
   - name: sample2
     in: |
-      beginner r
+      6
+      BBBBBB
+      WWWWWW
     out: |
-      No
+      -1
   - name: sample3
     in: |
-      verticalreading agh
+      14
+      BBBWBWWWBBWWBW
+      WBWWBBWWWBWBBB
     out: |
-      No
+      7
 
 extend:
   - type: Text
-    path: "./b"
+    path: "./d"
     in: /in/*.txt
     out: /out/*.txt

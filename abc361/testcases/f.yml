@@ -6,22 +6,17 @@ match: Lines
 cases:
   - name: sample1
     in: |
-      atcoder toe
+      99
     out: |
-      Yes
+      12
   - name: sample2
     in: |
-      beginner r
+      1000000000000000000
     out: |
-      No
-  - name: sample3
-    in: |
-      verticalreading agh
-    out: |
-      No
+      1001003332
 
 extend:
   - type: Text
-    path: "./b"
+    path: "./f"
     in: /in/*.txt
     out: /out/*.txt
